@@ -9,6 +9,8 @@ Package license: GPL-3.0-or-later
 
 Summary: Resevoir Monitoring using Satellite Remote Sensing
 
+Documentation: https://rat-satellitedams.readthedocs.io/en/latest/
+
 Current build status
 ====================
 
