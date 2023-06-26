@@ -1,5 +1,5 @@
 {% set name = "rat" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: 0d7f34fcfe5af29b23380af19668fcf4b56fc58f55cda1ed612c7704933e4e85
+  sha256: c1718857affdf5d8e97eb3a0fdf895c61097a5c02551a6ef71ef8ffea46c2ced
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,6 +23,20 @@ requirements:
     - python >=3.6
     - make
     - gfortran
+    - rasterio
+    - xarray
+    - geopandas
+    - rioxarray
+    - earthengine-api
+    - pandas
+    - numpy
+    - netcdf4
+    - dask
+    - scipy
+    - scikit-learn
+    - ruamel_yaml
+    - yaml
+    - gdown
 
 test:
   imports:
