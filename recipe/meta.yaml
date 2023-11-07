@@ -25,6 +25,8 @@ requirements:
     - python >=3.6
     - make
     - gfortran
+    - ruamel_yaml
+    - yaml
     - rasterio
     - xarray
     - geopandas
@@ -36,9 +38,11 @@ requirements:
     - dask
     - scipy
     - scikit-learn
-    - ruamel_yaml
-    - yaml
     - gdown
+    - requests
+    - shapely
+    - matplotlib
+    - pyyaml
 
 test:
   imports:
