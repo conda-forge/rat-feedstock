@@ -1,5 +1,5 @@
 {% set name = "rat" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: cdd9ef1131b781eed7c1bb15654b743338b5daf7136a92baf2f665555ee1dad7
+  sha256: 71053507a6276e7eb670c6b8b12166dfd8fea484db4c7126b6aee369003d6482
 
 build:
   noarch: python
@@ -44,6 +44,7 @@ test:
   imports:
     - rat
   commands:
+    - pip install ruamel_yaml  # installing ruamel-yaml manually using pip as PyPI package name is ruamel.yaml while conda package name is ruamel_yaml, though both can be installed using ruamel_yaml. This is done for pip check.
     - pip check
   requires:
     - pip
