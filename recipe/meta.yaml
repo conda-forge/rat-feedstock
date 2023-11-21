@@ -1,5 +1,6 @@
 {% set name = "rat" %}
-{% set version = "3.0.7" %}
+{% set version = "3.0.8" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: 71053507a6276e7eb670c6b8b12166dfd8fea484db4c7126b6aee369003d6482
+  sha256: 00f12471e120f7203974caa577d4e9dcc0af4b361b534592f4f4d1d4b7dc97a8
 
 build:
   noarch: python
@@ -25,6 +26,7 @@ requirements:
     - python >=3.6
     - make
     - gfortran
+    - wget
     - rasterio
     - xarray
     - geopandas
