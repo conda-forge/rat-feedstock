@@ -49,6 +49,7 @@ test:
     - rat
   commands:
     - pip install ruamel_yaml  # installing ruamel-yaml manually using pip as PyPI package name is ruamel.yaml while conda package name is ruamel_yaml, though both can be installed using ruamel_yaml. This is done for pip check.
+    - pip install geonetworkx  # installing geonetworkx manually using pip to pass tests. It is not available in conda.
     - pip check
   requires:
     - pip
