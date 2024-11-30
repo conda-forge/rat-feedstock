@@ -1,5 +1,5 @@
 {% set name = "rat" %}
-{% set version = "3.0.14" %}
+{% set version = "3.0.15" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: e678e49a602b33eb273efed7859ad621e9e5e5b0ed1913e26b45677bfa8a4c8d
+  sha256: d4d2418624686a9d69521fa730d4804b2efc4060c8eb99215d702992b79283b4
 
 build:
   noarch: python
@@ -43,6 +43,9 @@ requirements:
     - gdown
     - plotly
     - cfgrib
+    - gdal
+    - libnetcdf
+    - libgdal-netcdf
 
 test:
   imports:
