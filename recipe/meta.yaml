@@ -1,5 +1,5 @@
 {% set name = "rat" %}
-{% set version = "3.0.16" %}
+{% set version = "3.0.17" %}
 {% set python_min = "3.7" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: 762c07874e30b74496c4f2eed87fbbd0c44856787f9cf65e298fe5c18ca214f3
+  sha256: 3626d021a99b74fa8086293b81cca84b9776616f76840c5b29ce032c6e9fa5c3
 
 build:
   noarch: python
