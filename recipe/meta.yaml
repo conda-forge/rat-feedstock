@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: d951d2276fc8d96a9ee237c09030f5a369456c58fdc9860b2fd73b7c972ae91f
+  sha256: 3626d021a99b74fa8086293b81cca84b9776616f76840c5b29ce032c6e9fa5c3
 
 build:
   noarch: python
