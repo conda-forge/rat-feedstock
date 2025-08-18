@@ -11,6 +11,15 @@ Summary: Resevoir Monitoring using Satellite Remote Sensing
 
 Documentation: https://rat-satellitedams.readthedocs.io/en/latest/
 
+The Reservoir Assessment Tool (RAT) uses satellite remote sensing data to monitor
+water surface area and water level changes in artificial reservoirs. It uses
+this information, along with topographical information (either derived from satellite
+data, or in-situ topo maps) to estimate the Storage Change (∆S) in the reservoirs.
+Additionally, RAT models the Inflow (I) and the Evaporation (E) of each reservoir.
+Finally, RAT uses the modeled I, and E, and estimated ∆S, to estimate the Outflow (O)
+from reservoirs.
+
+
 Current build status
 ====================
 
@@ -97,7 +106,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
