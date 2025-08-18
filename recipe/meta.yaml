@@ -1,5 +1,5 @@
 {% set name = "rat" %}
-{% set version = "3.0.16" %}
+{% set version = "3.0.18" %}
 {% set python_min = "3.7" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rat-{{ version }}.tar.gz
-  sha256: 762c07874e30b74496c4f2eed87fbbd0c44856787f9cf65e298fe5c18ca214f3
+  sha256: 453aedd87de9a1c345ea40dd7395aa38744b07a347c0287a786e4dbaf7ff1721
 
 build:
   noarch: python
@@ -70,7 +70,8 @@ about:
     data, or in-situ topo maps) to estimate the Storage Change (∆S) in the reservoirs. 
     Additionally, RAT models the Inflow (I) and the Evaporation (E) of each reservoir. 
     Finally, RAT uses the modeled I, and E, and estimated ∆S, to estimate the Outflow (O) 
-    from reservoirs. 
+    from reservoirs. Other than quantitative variables, RAT can also provide normalized 
+    suspended sediment concentration (NSSC) as qualitative measure.
 
 extra:
   recipe-maintainers:
